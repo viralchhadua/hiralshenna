@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | Hiral's Henna — Bridal Henna Artist in Atlanta & North Georgia</title>
+  <meta name="description" content="Contact Hiral's Henna to book your bridal henna, henna party, baby shower, corporate event, or birthday party in Atlanta, Gainesville, and North Georgia. Call 678-283-4398.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="header-solid">
+  <a href="index.html" class="logo">Hiral's Henna</a>
+  <nav>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="services.html">Services</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+    <button class="hamburger" onclick="document.getElementById('navLinks').classList.toggle('open')" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+</header>
+
+<!-- PAGE HEADER -->
+<div class="page-header">
+  <h1>Contact Us</h1>
+</div>
+
+<!-- CONTACT FORM -->
+<div class="contact-wrapper">
+  <p>Have a question or ready to book? Fill out the form below and we'll get back to you as soon as possible.</p>
+
+  <!-- Netlify Forms — the data-netlify="true" and name attributes are all Netlify needs -->
+  <form class="contact-form" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+
+    <!-- Honeypot field for spam prevention (hidden from real users) -->
+    <p style="display:none;">
+      <label>Don't fill this out: <input name="bot-field"></label>
+    </p>
+
+    <label>
+      Name
+      <input type="text" name="name" placeholder="Your name" required>
+    </label>
+
+    <label>
+      Email
+      <input type="email" name="email" placeholder="Your email" required>
+    </label>
+
+    <label>
+      Phone
+      <input type="tel" name="phone" placeholder="Your phone number">
+    </label>
+
+    <label>
+      Event Type
+      <select name="event-type" required>
+        <option value="" disabled selected>Select your event type</option>
+        <option value="Wedding / Bridal Henna">Wedding / Bridal Henna</option>
+        <option value="Henna Party">Henna Party</option>
+        <option value="Baby Shower">Baby Shower</option>
+        <option value="Corporate Event">Corporate Event</option>
+        <option value="Birthday Party">Birthday Party</option>
+        <option value="Other">Other</option>
+      </select>
+    </label>
+
+    <label>
+      Event Date
+      <input type="date" name="event-date">
+    </label>
+
+    <label>
+      Message
+      <textarea name="message" placeholder="Tell us about your event — number of guests, location, design preferences, or any questions you have." required></textarea>
+    </label>
+
+    <button type="submit">Send Message</button>
+  </form>
+
+  <div class="contact-info">
+    <p>Or reach us directly:</p>
+    <p><a href="tel:6782834398">678-283-4398</a></p>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <p>Copyright &copy; 2026 Hiral's Henna - All Rights Reserved.</p>
+  <p class="footer-sub">Professional Henna Artist in Atlanta, Gainesville &amp; North Georgia</p>
+</footer>
+
+<!-- COOKIE BANNER -->
+<div class="cookie-banner" id="cookieBanner">
+  <div>
+    <h4>This website uses cookies.</h4>
+    <p>We use cookies to analyze website traffic and optimize your website experience. By accepting our use of cookies, your data will be aggregated with all other user data.</p>
+  </div>
+  <button onclick="document.getElementById('cookieBanner').classList.add('hidden')">Accept</button>
+</div>
+
+</body>
+</html>
