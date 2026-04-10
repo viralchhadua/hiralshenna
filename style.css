@@ -91,7 +91,7 @@ nav { display: flex; align-items: center; }
   /* ▼ REPLACE WITH YOUR IMAGE ▼
      background: url('images/hero.jpg') center/cover no-repeat;
   */
-  background: images/fulllogo.png (160deg, #3a2d25 0%, #1a1a1a 100%);
+  background: url('images/fulllogo.png') center/cover no-repeat;
 }
 .hero-content {
   position: relative;
