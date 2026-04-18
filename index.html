@@ -47,6 +47,7 @@
 <footer>
   <p>Copyright &copy; 2026 Hiral's Henna - All Rights Reserved.</p>
   <p class="footer-sub">Professional Henna Artist in Atlanta, Gainesville &amp; North Georgia</p>
+  <p class="footer-sub">Website designed and managed by <a href="https://reddirtwebsites.com" target="_blank" rel="noopener">Red Dirt Web Solutions</a></p>
 </footer>
 
 <!-- COOKIE BANNER -->
@@ -55,8 +56,18 @@
     <h4>This website uses cookies.</h4>
     <p>We use cookies to analyze website traffic and optimize your website experience. By accepting our use of cookies, your data will be aggregated with all other user data.</p>
   </div>
-  <button onclick="document.getElementById('cookieBanner').classList.add('hidden')">Accept</button>
+  <button onclick="acceptCookies()">Accept</button>
 </div>
+
+<script>
+  if (localStorage.getItem('cookiesAccepted')) {
+    document.getElementById('cookieBanner').classList.add('hidden');
+  }
+  function acceptCookies() {
+    localStorage.setItem('cookiesAccepted', 'true');
+    document.getElementById('cookieBanner').classList.add('hidden');
+  }
+</script>
 
 </body>
 </html>

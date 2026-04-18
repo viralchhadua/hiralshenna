@@ -88,10 +88,7 @@ nav { display: flex; align-items: center; }
 .hero-overlay {
   position: absolute;
   inset: 0;
-  /* ▼ REPLACE WITH YOUR IMAGE ▼
-     background: url('images/hero.jpg') center/cover no-repeat;
-  */
-  background: url('images/bridal-henna-mehndi-full-arm.jpeg') center/cover no-repeat;
+  background: url('images/fulllogo.png') center/cover no-repeat;
 }
 .hero-content {
   position: relative;
@@ -338,6 +335,12 @@ footer p {
   font-size: 0.72rem !important;
   color: #bbb !important;
 }
+.footer-sub a {
+  color: #bbb;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.footer-sub a:hover { color: #999; }
 
 /* ── COOKIE BANNER ── */
 .cookie-banner {
