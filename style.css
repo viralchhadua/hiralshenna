@@ -41,12 +41,6 @@ header.header-solid .hamburger span { background: #333; }
   font-weight: 500;
   text-decoration: none;
 }
-.logo-img {
-  width: 200px;
-  height: 150px;
-  object-fit: contain;
-  display: block;
-}
 
 nav { display: flex; align-items: center; }
 
@@ -325,6 +319,101 @@ nav { display: flex; align-items: center; }
   transition: border-color 0.3s;
 }
 .contact-info a:hover { border-color: #333; }
+
+/* ── LANDING PAGES ── */
+.landing-content {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 60px 24px 80px;
+}
+.landing-intro {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.landing-intro h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.35rem;
+  font-weight: 400;
+  color: #222;
+  margin-bottom: 16px;
+}
+.landing-intro p {
+  font-size: 0.92rem;
+  color: #555;
+  line-height: 1.9;
+  max-width: 600px;
+  margin: 0 auto;
+}
+.landing-section {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.landing-section:last-of-type { margin-bottom: 50px; }
+.landing-section h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 14px;
+}
+.landing-section p {
+  font-size: 0.88rem;
+  color: #666;
+  line-height: 1.85;
+  max-width: 600px;
+  margin: 0 auto 12px;
+}
+.landing-section p:last-child { margin-bottom: 0; }
+.inline-link {
+  color: #333;
+  text-decoration: none;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 1px;
+  transition: border-color 0.3s, color 0.3s;
+}
+.inline-link:hover { color: #000; border-color: #333; }
+.landing-cta {
+  text-align: center;
+  margin-top: 50px;
+  padding-top: 50px;
+  border-top: 1px solid #eee;
+}
+.landing-cta h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: #222;
+  margin-bottom: 10px;
+}
+.landing-cta p {
+  font-size: 0.88rem;
+  color: #666;
+  margin-bottom: 24px;
+}
+.landing-btn {
+  display: inline-block;
+  padding: 14px 40px;
+  background: #333;
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.82rem;
+  font-weight: 400;
+  letter-spacing: 0.08em;
+  transition: background 0.3s, transform 0.3s;
+}
+.landing-btn:hover { background: #555; transform: translateY(-2px); }
+.landing-phone {
+  margin-top: 16px;
+  font-size: 0.85rem;
+  color: #999;
+}
+.landing-phone a {
+  color: #666;
+  text-decoration: none;
+  border-bottom: 1px solid #ccc;
+  transition: color 0.3s, border-color 0.3s;
+}
+.landing-phone a:hover { color: #333; border-color: #333; }
 
 /* ── FOOTER ── */
 footer {
